@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Skill List</title>
+    <script
+  src="https://code.jquery.com/jquery-1.12.3.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="/file/styles.css"/>
+  </head>
+  <body>
+    <h1>My Skill List</h1>
+    <div id="skill-table">
+      <form>
+        <input type="text" name="item" placeholder="Add new skill..." required />
+        <button type="submit" >Add Skill</button>
+      </form>
+
+        <ul>
+
+          <% for(var i=0; i< skills.length; i++){ %>
+            <li><%= skills[i].item %></li>
+            <% } %>
+
+        </ul>
+
+    </div>
+
+  </body>
+</html>
